@@ -4,7 +4,7 @@ class Codx < Formula
   # 1. METADATA: Basic information about your formula.
   desc "A powerful, local-first code snippet manager for the command line"
   homepage "https://github.com/LalwaniPalash/codx"
-  version "1.0.1" # This should match the version of your GitHub Release.
+  version "1.0.2" # This should match the version of your GitHub Release.
 
   # 2. BINARY DEFINITIONS: This is the core logic.
   # We define different URLs and checksums for each OS/CPU combination.
@@ -15,7 +15,7 @@ class Codx < Formula
       sha256 "PASTE_THE_SHA256_HASH_OF_THE_INTEL_MAC_BINARY_HERE"
     elsif Hardware::CPU.arm?
       # For Apple Silicon (M1/M2/M3) Macs
-      url "https://github.com/LalwaniPalash/codx/releases/download/v1.0.1/codx-macos-arm64"
+      url "https://github.com/LalwaniPalash/codx/releases/download/v1.0.2/codx-macos-arm64"
       sha256 "PASTE_THE_SHA256_HASH_OF_THE_ARM_MAC_BINARY_HERE"
     end
   end
@@ -23,7 +23,7 @@ class Codx < Formula
   on_linux do
     if Hardware::CPU.intel?
       # For Intel/AMD Linux
-      url "https://github.com/LalwaniPalash/codx/releases/download/v1.0.1/codx-linux-amd64"
+      url "https://github.com/LalwaniPalash/codx/releases/download/v1.0.2/codx-linux-amd64"
       sha256 "PASTE_THE_SHA256_HASH_OF_THE_LINUX_BINARY_HERE"
     end
     # You could add an arm64 block for Linux on ARM (e.g., Raspberry Pi) if you build for it.
